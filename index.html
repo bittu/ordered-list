@@ -45,11 +45,7 @@
   <body>
 
 	<div id="loading">
-		<div class="block">
-			<div class="centered">
-				<img src="images/octocat-spinner-64.gif" alt="octocat-spinner">
-			</div>
-		</div>
+		<img src="images/octocat-spinner-64.gif" alt="octocat-spinner">
 	</div>
 	<script type="text/javascript">
 		document.getElementById('loading').style.height = (getDocHeight()-100)+"px";
@@ -60,15 +56,15 @@
 			<h1><a href="/">bittu.github.com </a><span style="font-size: 24px;">/</span> JBThemes.ordered-list</h1>
 			<div class="pull-right">
 				<div class="btn-group">
-					<a href="https://github.com/bittu/JB-Themes/zipball/master" class="btn">
+					<a href="https://github.com/bittu/JBThemes.ordered-list/zipball/master" class="btn">
 						<small>Download</small>
 						<h5>.ZIP</h5>
 					</a>
-					<a href="https://github.com/bittu/JB-Themes/tarball/master" class="btn">
+					<a href="https://github.com/bittu/JBThemes.ordered-list/tarball/master" class="btn">
 						<small>Download</small>
 						<h5>.TAR</h5>
 					</a>
-					<a href="https://github.com/bittu/JB-Themes" class="btn">
+					<a href="https://github.com/bittu/JBThemes.ordered-list" class="btn">
 						<small>Fork</small>
 						<h5>GITHUB</h5>
 					</a>
@@ -81,7 +77,7 @@
 		
 		<div class="row">
 			<div class="span12">
-				<h2 class="pull-right"> - Ordered-list theme for Jekyll + Jekyll-Bootstrap. inspired from <a href="http://www.orderedlist.com">ORDEREDLIST</a>.</h2>
+				<h2 class="pull-right"> - Ordered-list theme for Jekyll + Jekyll-Bootstrap. <small>inspired from <a href="http://www.orderedlist.com">ORDEREDLIST</a>.</small></h2>
 				<div class="clearfix"></div>
 				
 			</div>	
@@ -99,11 +95,9 @@
 								<p class="ics-font-grey">Have a look at the demo</p>
 								<small><a href="demo/">here</a></small>
 								<p class="ics-font-grey">Browse source</p>
-								<small><a href="">here</a></small>
-								<p class="ics-font-grey">Download theme</p>
-								<small><a href="">here</a></small>
+								<small><a href="https://github.com/bittu/JBThemes.ordered-list">here</a></small>
 								<p class="ics-font-grey">Install Guide</p>
-								<small><a href="">here</a></small>
+								<small><a data-toggle="modal" href="#installguide" >here</a></small>
 							</blockquote>
 							<br />
 						</div>
@@ -126,6 +120,31 @@
 	</footer>
 
 	</div>
+	
+	<div class="modal hide" id="installguide">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal">x</button>
+		<h3>Installation Guide: ordered-list</h3>
+	  </div>
+	  <div class="modal-body">
+		<p>To install, run the following rake task in the root of your Jekyll-Bootstrap directory.</p>
+		<pre><code>rake theme:install git="https://github.com/bittu/JBThemes.ordered-list.git"</code></pre>
+		<ul>
+			<li><strong>name:</strong>ordered-list</li>
+			<li><strong>author:</strong>
+		<ul>
+        <li> Sandeep Vemula <em> aka </em> bittu</li>
+        <li><a href="mailto:bittu4u.4ever@gmail.com">bittu4u.4ever@gmail.com</a></li>
+        <li><a href="http://bittu.github.com" target="_blank">http://bittu.github.com</a></li>
+      </ul>
+    </li>
+  </ul>
+	  </div>
+	  <div class="modal-footer">
+		<a href="#" class="btn" data-dismiss="modal">Close</a>
+	  </div>
+	</div>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="javascripts/jquery-1.7.2.min.js"><\/script>')</script>
 
